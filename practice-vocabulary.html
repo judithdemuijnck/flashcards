@@ -15,6 +15,7 @@
             <a href="index.html"><img src="icons/Flashcards_logo.png" alt="Flashcards logo"></a>
         </div>
     </header>
+
     <nav>
         <ul class="navbar">
             <li><a href="create-vocabulary.html">Create Vocabulary</a></li>
@@ -25,17 +26,24 @@
     </nav>
 
     <main>
-        <h1>What would you like to do?</h1>
+        <h1>Practice Your Vocabulary</h1>
 
-        <div class="menu">
-            <a href="create-vocabulary.html" class="menu-btn">Create Your Vocabulary</a>
-            <a href="access-vocabulary.html" class="menu-btn">Access Your Vocabulary</a>
-            <a href="practice-vocabulary.html" class="menu-btn">Practice Your Vocabulary</a>
-        </div>
+        <form action="" class="practice-vocabulary">
+            <div class="question-generator">
+                <p>This will be generated</p>
+            </div>
+            <div class="check-answer">
+                <div class="answer-input"><label for="answer"><textarea name="answer" id="answer"
+                            placeholder="What is the translation of 'term'?"></textarea></label></div>
+                <div class="correct-answer">
+                    <p>Correct answer</p>
+                </div>
+            </div>
+            <button>Submit</button>
+        </form>
     </main>
 
     <footer></footer>
-
 </body>
 
 </html>

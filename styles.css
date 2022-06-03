@@ -13,19 +13,18 @@ logo-chip-light: #2fb7e5 */
 
 body {
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    /* flex-wrap: wrap; */
     margin: 0;
     background-image: linear-gradient(135deg, #fff, #baf0df, #fff);
     min-height: 100vh;
     justify-content: center;
-    align-items: start;
+    /* align-items: start; */
     /* position: relative; */
 }
 
 div.img-logo {
     background-image: linear-gradient(to right, #aeedda, #baf0df);
-    /* background-color: #b5eedc; */
     width: 100vw;
     height: 100%;
     justify-content: center;
@@ -40,7 +39,53 @@ img {
     /* justify-content: center; */
 }
 
+nav {
+    display: flex;
+    background-color: #374892;
+}
+
+ul.navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar li {
+    align-items: center;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #aeedda;
+    font-weight: lighter;
+    font-size: 1em;
+    font-variant: small-caps;
+    transition: all 200ms ease-in-out;
+
+}
+
+.navbar a:hover {
+    font-weight: normal;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 100;
+    justify-content: center;
+    color: #374892;
+    width: 100vw;
+}
+
 .menu {
+    margin: auto auto;
+    /* transform: translate(0, 50%); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -70,4 +115,112 @@ a.menu-btn:hover {
     background-image: radial-gradient(circle, #374892 0%, #2fb7e5 50%, #374892 100%);
     color: #baf0df;
     font-size: 1.2em;
+}
+
+form.create-vocabulary,
+form.practice-vocabulary {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.input-vocabulary,
+div.question-generator,
+div.answer-input,
+div.correct-answer {
+    background-color: #374892;
+    padding: 10px;
+    margin: 10px;
+    border: 2px ridge #374892;
+    border-radius: 3%;
+}
+
+div.input-vocabulary textarea,
+div.question-generator p,
+div.answer-input textarea,
+div.correct-answer p {
+    max-width: 100vw;
+    width: 300px;
+    height: 260px;
+    text-align: left;
+    vertical-align: text-top;
+    justify-content: right;
+    border: 3px ridge #aeedda;
+    border-radius: 3%;
+    font-family: Poppins, sans-serif;
+    font-size: 1.3em;
+    padding: 10px;
+    resize: none;
+    background-color: #fff;
+    margin: 0;
+}
+
+form.create-vocabulary button,
+form.practice-vocabulary button {
+    width: 300px;
+    max-width: 100%;
+    font-family: Poppins, sans-serif;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.7em;
+    margin: 10px;
+    background-image: linear-gradient(135deg, #baf0df, #2fb7e5, #374892);
+    transition: 200ms ease-in-out;
+
+}
+
+form.create-vocabulary button:hover,
+form.practice-vocabulary button:hover {
+    background-image: radial-gradient(circle, #374892 0%, #2fb7e5 50%, #374892 100%);
+    color: #baf0df;
+    font-size: 1em;
+}
+
+
+.search-bar {
+    float: right;
+    margin: 10px;
+}
+
+.search-bar input[type="text"] {
+    font-family: Poppins, sans-serif;
+    border: 1px solid #374892;
+    border-radius: 30px;
+    width: 200px;
+    max-width: 100vw;
+    padding: 5px 10px;
+}
+
+.vocabulary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 100vw; */
+    margin: auto;
+    flex-direction: row;
+}
+
+.vocabulary thead,
+.vocabulary tr {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    margin: auto;
+    justify-content: center;
+}
+
+.vocabulary th,
+.vocabulary td {
+    width: 200px;
+    border: 1px solid #374892;
+    padding: 5px;
+    text-align: center;
+}
+
+div.answer-input textarea,
+div.correct-answer p {
+    height: 100px;
 }
